@@ -1,7 +1,7 @@
-﻿<Page x:Class="RestaurantManager.OrderPage"
+﻿<Page x:Class="RestaurantManager.UniversalWindows.OrderPage"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-      xmlns:local="using:RestaurantManager"
+      xmlns:local="using:RestaurantManager.UniversalWindows"
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
       mc:Ignorable="d">
@@ -12,7 +12,8 @@
                           Click="AppBarButton_Click" />
         </AppBar>
     </Page.TopAppBar>
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+          DataContext="{StaticResource DataManager}">
         <Grid.RowDefinitions>
             <RowDefinition Height="0.2*" />
             <RowDefinition Height="0.1*" />
@@ -33,10 +34,12 @@
                    Text="Order Items:" />
         <ListView Grid.Row="1"
                   Grid.RowSpan="3"
-                  Grid.Column="0" />
+                  Grid.Column="0"
+                  ItemsSource="{Binding MenuItems}" />
         <ListView Grid.Row="2"
                   Grid.RowSpan="2"
-                  Grid.Column="2" />
+                  Grid.Column="2"
+                  ItemsSource="{Binding CurrentlySelectedMenuItems}" />
         <Button Grid.Row="4"
                 Grid.Column="0"
                 Content="Add to Order"

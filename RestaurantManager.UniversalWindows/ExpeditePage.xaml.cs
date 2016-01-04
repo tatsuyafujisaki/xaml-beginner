@@ -1,11 +1,11 @@
 ﻿using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 
-namespace RestaurantManager
+namespace RestaurantManager.UniversalWindows
 {
-    public sealed partial class OrderPage : Page
+    public sealed partial class ExpeditePage : Page
     {
-        public OrderPage()
+        public ExpeditePage()
         {
             InitializeComponent();
         }
