@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp">
+  <Identity Name="1c0f59b3-a29b-4ef5-abd1-eed0309804dc" Publisher="CN=Tatsuya" Version="1.0.0.0" />
+  <mp:PhoneIdentity PhoneProductId="1c0f59b3-a29b-4ef5-abd1-eed0309804dc" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <Properties>
+    <DisplayName>RestaurantManager</DisplayName>
+    <PublisherDisplayName>Tatsuya</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.0.0" MaxVersionTested="10.0.0.0" />
+  </Dependencies>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="RestaurantManager.App">
+      <uap:VisualElements DisplayName="RestaurantManager" Square150x150Logo="Assets/LargeSquareLogo.png" Square44x44Logo="Assets/SmallSquareLogo.png" Description="RestaurantManager" BackgroundColor="black">
+        <uap:SplashScreen Image="Assets\SplashScreen.png" />
+      </uap:VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>
