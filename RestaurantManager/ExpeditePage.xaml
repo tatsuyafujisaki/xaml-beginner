@@ -5,14 +5,22 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
       mc:Ignorable="d">
+    <Page.TopAppBar>
+        <AppBar>
+            <AppBarButton Icon="Home"
+                          Label="Home"
+                          Click="AppBarButton_Click" />
+        </AppBar>
+    </Page.TopAppBar>
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.RowDefinitions>
             <RowDefinition Height="0.9*" />
             <RowDefinition Height="0.1*" />
         </Grid.RowDefinitions>
-        <TextBlock Grid.Row="1"
-                   Text="**Clear All Orders**"
-                   VerticalAlignment="Center"
-                   HorizontalAlignment="Center" />
+        <GridView Grid.Row="0"></GridView>
+        <Button Grid.Row="1"
+                Content="Clear All Orders"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center" />
     </Grid>
 </Page>

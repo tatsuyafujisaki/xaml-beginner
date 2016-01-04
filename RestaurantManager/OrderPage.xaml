@@ -5,6 +5,13 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
       mc:Ignorable="d">
+    <Page.TopAppBar>
+        <AppBar>
+            <AppBarButton Icon="Home"
+                          Label="Home"
+                          Click="AppBarButton_Click" />
+        </AppBar>
+    </Page.TopAppBar>
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.RowDefinitions>
             <RowDefinition Height="0.2*" />
@@ -20,21 +27,26 @@
         </Grid.ColumnDefinitions>
         <TextBlock Grid.Row="1"
                    Grid.Column="1"
-                   Grid.ColumnSpan="1"
                    Text="Special Requests:" />
         <TextBlock Grid.Row="1"
                    Grid.Column="2"
                    Text="Order Items:" />
-        <TextBlock Grid.Row="4"
-                   Grid.Column="0"
-                   Text="**Add to Order**"
-                   VerticalAlignment="Center"
-                   HorizontalAlignment="Center" />
-        <TextBlock Grid.Row="4"
-                   Grid.Column="1"
-                   Grid.ColumnSpan="2"
-                   Text="**Submit Order**"
-                   VerticalAlignment="Center"
-                   HorizontalAlignment="Center" />
+        <ListView Grid.Row="1"
+                  Grid.RowSpan="3"
+                  Grid.Column="0" />
+        <ListView Grid.Row="2"
+                  Grid.RowSpan="2"
+                  Grid.Column="2" />
+        <Button Grid.Row="4"
+                Grid.Column="0"
+                Content="Add to Order"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center" />
+        <Button Grid.Row="4"
+                Grid.Column="1"
+                Grid.ColumnSpan="2"
+                Content="Submit Order"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center" />
     </Grid>
 </Page>

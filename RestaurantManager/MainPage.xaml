@@ -28,15 +28,17 @@
                    VerticalAlignment="Bottom"
                    HorizontalAlignment="Center"
                    FontSize="24" />
-        <TextBlock Grid.Row="2"
-                   Grid.Column="0"
-                   Text="**Go to Orders View**"
-                   VerticalAlignment="Center"
-                   HorizontalAlignment="Center" />
-        <TextBlock Grid.Row="2"
-                   Grid.Column="1"
-                   Text="**Submit Order**"
-                   VerticalAlignment="Center"
-                   HorizontalAlignment="Center" />
+        <Button Grid.Row="2"
+                Grid.Column="0"
+                Content="Go to Orders View"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center"
+                Click="ExpeditePage_Click" />
+        <Button Grid.Row="2"
+                Grid.Column="1"
+                Content="Submit Order"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center"
+                Click="OrderPage_Click" />
     </Grid>
 </Page>
