@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2036
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestaurantManager.UniversalWindows", "RestaurantManager.UniversalWindows\RestaurantManager.UniversalWindows.csproj", "{366F0ED3-C929-44E6-8447-87F27D68231C}"
 EndProject
@@ -20,6 +20,7 @@ Global
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{366F0ED3-C929-44E6-8447-87F27D68231C}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{366F0ED3-C929-44E6-8447-87F27D68231C}.Debug|Any CPU.Deploy.0 = Debug|x86
 		{366F0ED3-C929-44E6-8447-87F27D68231C}.Debug|ARM.ActiveCfg = Debug|x86
 		{366F0ED3-C929-44E6-8447-87F27D68231C}.Debug|ARM.Build.0 = Debug|x86
 		{366F0ED3-C929-44E6-8447-87F27D68231C}.Debug|ARM.Deploy.0 = Debug|x86
@@ -57,5 +58,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4BC1F007-1DDA-418E-9D8D-1E90D63AAA9D}
 	EndGlobalSection
 EndGlobal
