@@ -66,6 +66,7 @@
     <UseVSHostingProcess>false</UseVSHostingProcess>
     <ErrorReport>send</ErrorReport>
     <Prefer32Bit>false</Prefer32Bit>
+    <DefineConstants>CODE_ANALYSIS</DefineConstants>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
     <OutputPath>bin\x86\Release\</OutputPath>
